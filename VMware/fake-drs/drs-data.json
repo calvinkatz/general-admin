@@ -1,0 +1,75 @@
+{
+    "hosts": [
+        {
+            "name": "vmhost1",
+            "CpuTotalMhz": "36000",
+            "CpuUsageMhz": "",
+            "MemoryTotalMB": "159744",
+            "MemoryUsageMB": "",
+            "vms": [
+                { "name": "vm1", "mhz": "280", "ram": "4"},
+                { "name": "vm2", "mhz": "2800", "ram": "4"},
+                { "name": "vm3", "mhz": "500", "ram": "2"},
+                { "name": "vm4", "mhz": "280", "ram": "64"},
+                { "name": "vm5", "mhz": "9000", "ram": "16"},
+                { "name": "vm6", "mhz": "357", "ram": "8"},
+                { "name": "vm7", "mhz": "512", "ram": "4"},
+                { "name": "vm8", "mhz": "5000", "ram": "12"},
+                { "name": "vm9", "mhz": "2000", "ram": "12"},
+                { "name": "vm10", "mhz": "800", "ram": "8"},
+                { "name": "vm11", "mhz": "512", "ram": "4"},
+                { "name": "vm12", "mhz": "1000", "ram": "2"}
+            ]
+        },
+        {
+            "name": "vmhost2",
+            "CpuTotalMhz": "36000",
+            "CpuUsageMhz": "",
+            "MemoryTotalMB": "159744",
+            "MemoryUsageMB": "",
+            "vms": [
+                { "name": "vm13", "mhz": "280", "ram": "4"},
+                { "name": "vm14", "mhz": "2800", "ram": "4"},
+                { "name": "vm15", "mhz": "500", "ram": "2"},
+                { "name": "vm16", "mhz": "280", "ram": "64"},
+                { "name": "vm17", "mhz": "9000", "ram": "16"},
+                { "name": "vm18", "mhz": "357", "ram": "8"},
+                { "name": "vm19", "mhz": "512", "ram": "4"},
+                { "name": "vm20", "mhz": "5000", "ram": "12"},
+                { "name": "vm21", "mhz": "2000", "ram": "12"},
+                { "name": "vm22", "mhz": "800", "ram": "8"}
+            ]
+        },
+        {
+            "name": "vmhost3",
+            "CpuTotalMhz": "36000",
+            "CpuUsageMhz": "",
+            "MemoryTotalMB": "159744",
+            "MemoryUsageMB": "",
+            "vms": [
+                { "name": "vm23", "mhz": "280", "ram": "4"},
+                { "name": "vm24", "mhz": "2800", "ram": "4"},
+                { "name": "vm25", "mhz": "500", "ram": "2"},
+                { "name": "vm26", "mhz": "280", "ram": "64"},
+                { "name": "vm27", "mhz": "9000", "ram": "16"},
+                { "name": "vm28", "mhz": "357", "ram": "8"},
+                { "name": "vm29", "mhz": "512", "ram": "4"},
+                { "name": "vm30", "mhz": "5000", "ram": "12"}
+            ]
+        },
+        {
+            "name": "vmhost4",
+            "CpuTotalMhz": "36000",
+            "CpuUsageMhz": "",
+            "MemoryTotalMB": "159744",
+            "MemoryUsageMB": "",
+            "vms": [
+                { "name": "vm31", "mhz": "280", "ram": "4"},
+                { "name": "vm32", "mhz": "2800", "ram": "4"},
+                { "name": "vm33", "mhz": "500", "ram": "2"},
+                { "name": "vm34", "mhz": "280", "ram": "64"},
+                { "name": "vm35", "mhz": "9000", "ram": "16"}
+            ]
+        }
+    ]
+}
