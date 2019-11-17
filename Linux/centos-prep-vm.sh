@@ -2,8 +2,25 @@
 # https://kb.vmware.com/s/article/71264
 # Set 'manual_cache_clean: True' in /etc/cloud/cloud.cfg
 
+RELEASE=$(cat /etc/centos-release | awk '{print $4}')
+
 # Setup cloud-init
-yum install -y cloud-init
+case "$RELEASE" in
+8*)
+    echo Detected CentOS-8
+    dnf install -y cloud-init
+    # Cleanup yum cache
+    dnf clean all
+    ;;
+7*)
+    echo Detected CentOS-7
+    yum install -y cloud-init
+    # Cleanup yum cache
+    yum clean all
+    ;;
+esac
+
+# Setup cloud config
 cp /etc/cloud/cloud.cfg /etc/cloud/cloud.cfg.bak
 echo "Modify cloud config now (/etc/cloud/cloud.cfg)"
 echo "Press Enter to continue..."
@@ -15,9 +32,6 @@ chmod +x /etc/rc.d/rc.local
 #cat <<EOF > /etc/cloud/cloud.cfg.d/99-custom-networking.cfg
 #network: {config: disabled}
 #EOF
-
-# Cleanup yum cache
-yum clean all
 
 # Remove this file and state
 rm ~/centos-prep-vm.sh
